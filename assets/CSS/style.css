@@ -2,22 +2,36 @@
     background-color: red;
     color: black;
     font-weight: bolder;
-    text-align: center;
-    margin: auto;
+    text-align: right;
 }
 
     
-ul {
+li {
     list-style-type: none;
+    text-align: right;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+h1 {
+    text-align: left;
+    font-size: 12px; 
+    font-family: 'BioRhyme';
 }
 
 
-.container1 {
+/* .container1 {
     text-align: center;
     color: green;
     font-style: cursive;
     font-weight: bolder;
-}
+} */
+
+
+/* .container2 {
+    align-items: center;
+
+} */
 
 body {
     background: url("../Images/background1.jpg") no-repeat center center fixed;
@@ -26,3 +40,15 @@ body {
     -o-background-size: cover;
     background-size: cover;
 }
+
+.bottomNav {
+    height: 10px;
+    width: 10px;
+    align-items: center;
+}
+
+footer {
+    background-color: red;
+    text-align: center;
+}
+
