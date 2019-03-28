@@ -1,0 +1,28 @@
+.topNav {
+    background-color: red;
+    color: black;
+    font-weight: bolder;
+    text-align: center;
+    margin: auto;
+}
+
+    
+ul {
+    list-style-type: none;
+}
+
+
+.container1 {
+    text-align: center;
+    color: green;
+    font-style: cursive;
+    font-weight: bolder;
+}
+
+body {
+    background: url("../Images/background1.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
