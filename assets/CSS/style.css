@@ -1,11 +1,10 @@
 .topNav {
     background-color: red;
-<<<<<<< HEAD
     text-align: right;
     margin-top: 15px;
 }
     
-li {
+/* li {
     list-style-type: none;
 }
 
@@ -21,7 +20,7 @@ li {
     padding: 20px;
     display: inline-block;
     font-weight: bold;
-}
+} */
 
 h1 {
     text-align: Center;
@@ -39,9 +38,10 @@ h1 {
     border-style: double;
 }
 
-/* #appetizers {
+#appetizers {
+    background: url("../Images/background.jpg");
    
-} */
+}
 
 /* #breakfast {
 
@@ -63,37 +63,7 @@ h1 {
 
 } */
 
-/* .container1 {
-=======
-    color: black;
-    font-weight: bolder;
-    text-align: center;
-    margin: auto;
-}
 
-    
-ul {
-    list-style-type: none;
-}
-
-
-.container1 {
->>>>>>> ad37933355d1e8ee9e59a61c8c107df64f528ebe
-    text-align: center;
-    color: green;
-    font-style: cursive;
-    font-weight: bolder;
-<<<<<<< HEAD
-} */
-
-
-/* .container2 {
-    align-items: center;
-
-} */
-=======
-}
->>>>>>> ad37933355d1e8ee9e59a61c8c107df64f528ebe
 
 body {
     background: url("../Images/background1.jpg") no-repeat center center fixed;
@@ -101,7 +71,6 @@ body {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-<<<<<<< HEAD
 }
 
 #bottomNav {
@@ -119,6 +88,3 @@ footer {
     margin-top: 20px;
 }
 
-=======
-}
->>>>>>> ad37933355d1e8ee9e59a61c8c107df64f528ebe
