@@ -27,6 +27,7 @@ h1 {
     font-size: 12px; 
     font-family: 'BioRhyme';
     margin-bottom: 45px;
+    color: black;
 }
 
 .container {
@@ -34,46 +35,33 @@ h1 {
     height: 800px;
     padding: 30px;
     border: red;
-    background-color: white;
+    background-color: rgb(136, 136, 136);
     border-style: double;
 }
 
-/* #appetizers {
-   
-} */
+#appetizers {
+   text-align: center;
+}
 
-/* #breakfast {
+#breakfast {
+    text-align: center;
+}
 
-} */
-/* 
 #brunch {
-
+    text-align: center;
 }
 
 #lunch {
-
+    text-align: center;
 }
 
 #dinner{
-
+    text-align: center;
 }
 
 #dessert {
-
-} */
-
-/* .container1 {
     text-align: center;
-    color: green;
-    font-style: cursive;
-    font-weight: bolder;
-} */
-
-
-/* .container2 {
-    align-items: center;
-
-} */
+} 
 
 body {
     background: url("../Images/background1.jpg") no-repeat center center fixed;
@@ -83,13 +71,19 @@ body {
     background-size: cover;
 }
 
+#tableBuddy {
+    color: black;
+    text-align: center;
+}
+
 #bottomNav {
     margin-top: 20px;
     padding: 20 px;
     height: 10px;
     width: 10px;
     margin-bottom: 10px;
-    
+    text-align: center;
+    position: static;
 }
 
 footer {

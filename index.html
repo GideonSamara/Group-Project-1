@@ -28,11 +28,11 @@
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
     integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 
-<!-- JavaScript -->
-<link rel="javascript" href="assets/Javascript/JavaScript.js">
-
 <!-- Images -->
 <link rel="images" href="assets/Images.jpg"> 
+
+<!-- Firebase -->
+<script src="https://www.gstatic.com/firebasejs/5.9.2/firebase.js"></script>
 
 <!-- Google Places API: AIzaSyCMRYCReVvNR6gw5e32j3byrqoAsOvyiAE -->
 
@@ -76,19 +76,19 @@
                 
         </div>
 
-        <div class = "container2">
+        <div class = "container-container2">
 
             <div class = "row">
 
-                <div class = "col-sm" id = "appetizers">
+                <div class = "col-sm">
 
-                    <div type = "button" inline-block = "app">APPETIZERS</div>  
+                    <div type = "button"  id = "appetizers" inline-block = "app">APPETIZERS</div>  
 
                 </div>
 
-                <div class = "col-sm" id = "breakfast">
+                <div class = "col-sm">
 
-                    <div type = "button" inline-block = "breakfast">BREAKFAST</div>
+                    <div type = "button" id = "breakfast" inline-block = "breakfast">BREAKFAST</div>
 
                 </div>
 
@@ -96,15 +96,15 @@
             
             <div class = "row">
 
-                <div class = "col-sm" id = "brunch">
+                <div class = "col-sm" >
             
-                    <div type = "button" inline-block = "brunch">BRUNCH</div>
+                    <div type = "button" id = "brunch"  inline-block = "brunch">BRUNCH</div>
             
                 </div>
 
-                <div class = "col-sm" id = "lunch">
+                <div class = "col-sm">
 
-                    <div type = "button" inline-block = "lunch">LUNCH</div>
+                    <div type = "button" id = "lunch" inline-block = "lunch">LUNCH</div>
 
                 </div>
 
@@ -113,21 +113,39 @@
 
             <div class = "row">
 
-                <div class = "col-sm" id = "dinner">
+                <div class = "col-sm">
             
-                    <div type = "button" inline-block = "dinner">DINNER</div>
+                    <div type = "button"  id = "dinner" inline-block = "dinner">DINNER</div>
             
                 </div>
 
-                <div class = "col-sm" id = "dessert">
+                <div class = "col-sm">
 
-                    <div type = "button" inline-block = "dessert">DESSERT</div>
+                    <div type = "button"  id = "dessert" inline-block = "dessert">DESSERT</div>
 
                 </div>
             
             </div>
 
         </div>
+
+        <table class="table">
+
+                <thead>
+    
+                    <tr>
+                        <!-- The scope attribute specifies that this is a header for a column -->
+                        <th scope="col">Name</th>
+    
+                        <th scope="col">Recipe Summary</th>
+    
+                    </tr>
+    
+                </thead>
+    
+                <tbody id="tableBuddy"></tbody>
+    
+        </table>
 
         <div class = "container3">
 
@@ -163,9 +181,30 @@
 
     </div>
 
-    <script src = "https://code.jquery.com/jquery-3.3.1.min.js"></script>
-    
+    <script>
+
+        var config = {
+
+          apiKey: "AIzaSyB2WYlAoiRdyImSoarzmM_b5XgFxNQbAUo",
+
+          authDomain: "food-for-thought1.firebaseapp.com",
+
+          databaseURL: "https://food-for-thought1.firebaseio.com",
+
+          projectId: "food-for-thought1",
+
+          storageBucket: "food-for-thought1.appspot.com",
+
+          messagingSenderId: "475962550976"
+        };
+
+        firebase.initializeApp(config);
+
+    </script>
+
     <script type="text/JavaScript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <script src="assets/Javascript/JavaScript.js"></script>
 
     <footer> Get Cookin' <i class = "fas fa-utensils"> </i></footer>
 
