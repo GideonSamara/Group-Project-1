@@ -1,0 +1,126 @@
+.topNav {
+    background-color: red;
+    text-align: right;
+    margin-top: 15px;
+}
+    
+/* li {
+    list-style-type: none;
+}
+
+#Log-In {
+    text-align: center;
+    padding: 20px;
+    display: inline-block;
+    font-weight: bold;
+}
+
+#Sign-Up {
+    text-align: center;
+    padding: 20px;
+    display: inline-block;
+    font-weight: bold;
+} */
+
+h1 {
+    text-align: Center;
+    font-size: 12px; 
+    font-family: 'BioRhyme';
+    margin-bottom: 45px;
+}
+
+.container {
+    width: 700px;
+    height: 800px;
+    padding: 30px;
+    border: red;
+    background-color: white;
+    border-style: double;
+}
+
+#appetizers {
+    background: url("../Images/background.jpg");
+   
+}
+
+/* #breakfast {
+
+} */
+/* 
+#brunch {
+
+}
+
+#lunch {
+
+}
+
+#dinner{
+
+}
+
+#dessert {
+
+} */
+
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
+
+
+=======
+=======
+>>>>>>> Stashed changes
+/* .container1 {
+    color: black;
+    font-weight: bolder;
+    text-align: center;
+    margin: auto;
+}
+
+    
+ul {
+    list-style-type: none;
+}
+
+
+.container1 {
+    text-align: center;
+    color: green;
+    font-style: cursive;
+    font-weight: bolder;
+<<<<<<< HEAD
+} */
+
+
+/* .container2 {
+    align-items: center;
+
+} */
+=======
+}
+>>>>>>> ad37933355d1e8ee9e59a61c8c107df64f528ebe
+
+>>>>>>> Stashed changes
+body {
+    background: url("../Images/background1.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#bottomNav {
+    margin-top: 20px;
+    padding: 20 px;
+    height: 10px;
+    width: 10px;
+    margin-bottom: 10px;
+    
+}
+
+footer {
+    background-color: red;
+    text-align: center;
+    margin-top: 20px;
+}
+
