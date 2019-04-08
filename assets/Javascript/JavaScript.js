@@ -2,7 +2,7 @@
 
 $("#appetizers").click(function () {
     var type = "appetizers";
-    var queryURL = "https://spoonacular-recipe-food-nutrition-v1.p.rapidapi.com/recipes/search?number=1&offset=0&type=" + type + "";
+    var queryURL = "https://spoonacular-recipe-food-nutrition-v1.p.rapidapi.com/recipes/random?number=1&tags=" + type + "";
 
     $.ajax({
         url: queryURL,
@@ -14,12 +14,31 @@ $("#appetizers").click(function () {
         var name = $('<td>').text(response.recipes[0].title);
         var recipe = $('<td>').text(response.recipes[0].instructions);
         tableRow.append(name, recipe);
-        $("#tableBuddy").append(tableRow);
+        $("#tableBuddy").prepend(tableRow);
 
         console.log(response.recipes);
 
     });
 });
+
+$("#appetizers").click(function () {
+    var queryURL = "https://api.giphy.com/v1/gifs/random?api_key=dc6zaTOxFJmzC&tag=appetizers"
+
+    $.ajax({
+        url: queryURL,
+        method: "GET",
+    }).then(function (response) {
+        var imageUrl = response.data.image_original_url;
+
+        var foodImage = $("<img>");
+
+        foodImage.attr("src", imageUrl);
+        foodImage.attr("alt", "food image");
+
+        $("#images").prepend(foodImage);       
+
+    })
+})
 
 $("#breakfast").click(function () {
     var type = "breakfast";
@@ -35,12 +54,31 @@ $("#breakfast").click(function () {
         var name = $('<td>').text(response.recipes[0].title);
         var recipe = $('<td>').text(response.recipes[0].instructions);
         tableRow.append(name, recipe);
-        $("#tableBuddy").append(tableRow);
+        $("#tableBuddy").prepend(tableRow);
 
         console.log(response.recipes);
 
     });
 });
+
+$("#breakfast").click(function () {
+    var queryURL = "https://api.giphy.com/v1/gifs/random?api_key=dc6zaTOxFJmzC&tag=breakfast"
+
+    $.ajax({
+        url: queryURL,
+        method: "GET",
+    }).then(function (response) {
+        var imageUrl = response.data.image_original_url;
+
+        var foodImage = $("<img>");
+
+        foodImage.attr("src", imageUrl);
+        foodImage.attr("alt", "food image");
+
+        $("#images").prepend(foodImage);       
+
+    })
+})
 
 $("#brunch").click(function () {
     var type = "brunch";
@@ -56,12 +94,31 @@ $("#brunch").click(function () {
         var name = $('<td>').text(response.recipes[0].title);
         var recipe = $('<td>').text(response.recipes[0].instructions);
         tableRow.append(name, recipe);
-        $("#tableBuddy").append(tableRow);
+        $("#tableBuddy").prepend(tableRow);
         
         console.log(response.recipes);
 
     });
 });
+
+$("#brunch").click(function () {
+    var queryURL = "https://api.giphy.com/v1/gifs/random?api_key=dc6zaTOxFJmzC&tag=brunch"
+
+    $.ajax({
+        url: queryURL,
+        method: "GET",
+    }).then(function (response) {
+        var imageUrl = response.data.image_original_url;
+
+        var foodImage = $("<img>");
+
+        foodImage.attr("src", imageUrl);
+        foodImage.attr("alt", "food image");
+
+        $("#images").prepend(foodImage);       
+
+    })
+})
 
 $("#lunch").click(function () {
     var type = "lunch";
@@ -77,12 +134,31 @@ $("#lunch").click(function () {
         var name = $('<td>').text(response.recipes[0].title);
         var recipe = $('<td>').text(response.recipes[0].instructions);
         tableRow.append(name, recipe);
-        $("#tableBuddy").append(tableRow);
+        $("#tableBuddy").prepend(tableRow);
 
         console.log(response.recipes);
 
     });
 });
+
+$("#lunch").click(function () {
+    var queryURL = "https://api.giphy.com/v1/gifs/random?api_key=dc6zaTOxFJmzC&tag=lunch"
+
+    $.ajax({
+        url: queryURL,
+        method: "GET",
+    }).then(function (response) {
+        var imageUrl = response.data.image_original_url;
+
+        var foodImage = $("<img>");
+
+        foodImage.attr("src", imageUrl);
+        foodImage.attr("alt", "food image");
+
+        $("#images").append(foodImage);       
+
+    })
+})
 
 $("#dinner").click(function () {
     var type = "dinner";
@@ -98,12 +174,31 @@ $("#dinner").click(function () {
         var name = $('<td>').text(response.recipes[0].title);
         var recipe = $('<td>').text(response.recipes[0].instructions);
         tableRow.append(name, recipe);
-        $("#tableBuddy").append(tableRow);
+        $("#tableBuddy").prepend(tableRow);
 
         console.log(response.recipes);
 
     });
 });
+
+$("#dinner").click(function () {
+    var queryURL = "https://api.giphy.com/v1/gifs/random?api_key=dc6zaTOxFJmzC&tag=dinner"
+
+    $.ajax({
+        url: queryURL,
+        method: "GET",
+    }).then(function (response) {
+        var imageUrl = response.data.image_original_url;
+
+        var foodImage = $("<img>");
+
+        foodImage.attr("src", imageUrl);
+        foodImage.attr("alt", "food image");
+
+        $("#images").prepend(foodImage);       
+
+    })
+})
 
 $("#dessert").click(function () {
     var type = "dessert";
@@ -119,9 +214,28 @@ $("#dessert").click(function () {
         var name = $('<td>').text(response.recipes[0].title);
         var recipe = $('<td>').text(response.recipes[0].instructions);
         tableRow.append(name, recipe);
-        $("#tableBuddy").append(tableRow);
+        $("#tableBuddy").prepend(tableRow);
 
         console.log(response.recipes);
 
     });
 });
+
+$("#dessert").click(function () {
+    var queryURL = "https://api.giphy.com/v1/gifs/random?api_key=dc6zaTOxFJmzC&tag=desserts"
+
+    $.ajax({
+        url: queryURL,
+        method: "GET",
+    }).then(function (response) {
+        var imageUrl = response.data.image_original_url;
+
+        var foodImage = $("<img>");
+
+        foodImage.attr("src", imageUrl);
+        foodImage.attr("alt", "food image");
+
+        $("#images").prepend(foodImage);       
+
+    })
+})
